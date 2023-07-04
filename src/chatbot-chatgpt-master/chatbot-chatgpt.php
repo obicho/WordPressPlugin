@@ -76,9 +76,9 @@ function chatbot_chatgpt_send_message() {
     $message = sanitize_text_field($_POST['message']);
 
     // Check API key and message
-    if (!$api_key || !$message) {
-        wp_send_json_error('Invalid API key or message');
-    }
+    // if (!$api_key || !$message) {
+    //     wp_send_json_error('Invalid API key or message');
+    // }
 
     // Send message to ChatGPT API
     $response = chatbot_chatgpt_call_api($api_key, $message);
@@ -155,7 +155,7 @@ function chatbot_chatgpt_call_api($api_key, $message) {
     // Return json_decode(wp_remote_retrieve_body($response), true);
     $response_body = json_decode(wp_remote_retrieve_body($response), true);
     // error_log(implode(" ", $response_body), 0);
-    error_log($response_body, 0);
+    // error_log($response_body, 0);
 
     // if (isset($response_body['choices']) && !empty($response_body['choices'])) {
     if (isset($response_body)) {
