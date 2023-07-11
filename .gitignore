@@ -35,3 +35,4 @@ sitemap.xml
 sitemap.xml.gz
 .htaccess
 error_log
+.DS_Store
