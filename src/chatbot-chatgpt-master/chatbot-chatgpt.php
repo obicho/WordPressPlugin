@@ -113,7 +113,7 @@ function chatbot_chatgpt_call_api($api_key, $message) {
 
     // The current ChatGPT API URL endpoint for gpt-3.5-turbo and gpt-4
     // $api_url = 'https://api.openai.com/v1/chat/completions';
-    $api_url = 'http://34.231.110.225:8000/protobot2';
+    $api_url = 'http://44.192.51.143:8000/protobot2';
 
     $headers = array(
         // 'Authorization' => 'Bearer ' . $api_key,
